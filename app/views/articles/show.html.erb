@@ -4,8 +4,19 @@
 </p>
  
 <p>
-  <strong>Text:</strong>
+  <strong>Raw Text:</strong>
   <%= raw @article.text %>
+</p>
+
+
+<p>
+  <strong>Default Text:</strong>
+  <%= @article.text %>
+</p>
+
+<p>
+  <strong>sanitize'd Text:</strong>
+  <%= sanitize @article.text %>
 </p>
 
 
