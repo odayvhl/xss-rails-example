@@ -4,13 +4,13 @@
 </p>
  
 <p>
-  <strong>Raw Text:</strong>
+  <strong>raw @article.text:</strong>
   <%= raw @article.text %>
 </p>
 
 
 <p>
-  <strong>Default Text:</strong>
+  <strong>@article.text:</strong>
   <%= @article.text %>
 </p>
 
@@ -24,7 +24,7 @@ content_tag(:div, "foo", title: sanitize('" onmouseover="alert(1);//'))`
 
 //-->
 <p>
-  <strong>sanitize'd Text:</strong>
+  <strong>sanitize @article.text:</strong>
   <%= sanitize @article.text %>
 </p>
 
