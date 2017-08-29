@@ -7,6 +7,10 @@
   <strong>Comment:</strong>
   <%= comment.body %>
 
+<!-- Use this string as a comment to bypass sanitize 
+     " onmouseover="alert(1);//
+//-->
+  
 <p>
   <strong>content_tag sanitize(comment.body):</strong>
   <%= content_tag(:div, "content_tag", title: sanitize(comment.body)) %>
