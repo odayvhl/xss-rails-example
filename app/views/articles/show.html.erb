@@ -28,6 +28,7 @@ content_tag(:div, "foo", title: sanitize('" onmouseover="alert(1);//'))`
   <%= sanitize @article.text %>
 </p>
 
+
 <h2>Comments</h2>
 <%= render @article.comments %>
 
